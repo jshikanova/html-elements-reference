@@ -1,0 +1,94 @@
+@import url("./reset.css");
+
+:root {
+  --dark-gray: #242424;
+  --blue: mediumblue;
+  --powdered-blue: powderblue;
+  --white: #fff;
+
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  color-scheme: dark;
+  color: var(--white);
+  background-color: var(--dark-gray);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    color: var(--dark-gray);
+    background-color: var(--white);
+  }
+}
+
+h1 {
+  font-size: 2em;
+}
+/* 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+} */
+
+/* :has(h1, h2, h3, h4, h5, h6) {
+  position: relative;
+}
+
+:has(h1, h2, h3, h4, h5, h6)::before {
+  content: "#";
+  position: absolute;
+  left: -1rem;
+} */
+
+table,
+tr,
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+table caption {
+  font-weight: bold;
+  /* font-size: 1.25rem; */
+}
+
+th,
+td {
+  padding: 0.25rem 0.75rem;
+}
+
+code,
+pre {
+  font-family: "Courier New", Courier, monospace;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd:not(:last-child) {
+  padding-block-end: 0.5rem;
+}
+
+a:not([class]) {
+  color: var(--powdered-blue);
+}
+
+@media (prefers-color-scheme: light) {
+  a:not([class]) {
+    color: var(--blue);
+  }
+}
+
+.container {
+  --p: 1rem;
+
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}

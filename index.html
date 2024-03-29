@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete list of HTML elements</title>
+  <link rel="stylesheet" href="./src/styles.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🐣</text></svg>">
+  </link>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Complete list of HTML elements</h1>
+    <p>
+      <em>
+        Based on
+        <a href="https://github.com/cbracco/html5-test-page" title="Github repo for 'HTML5 Test Page' by Chris Bracco"
+          target="_blank" rel="noopener noreferrer">
+          "HTML5 Test Page"
+        </a>
+        by
+        <a href="https://chrisbracco.com/" target="_blank" rel="noopener noreferrer"><i>Chris Bracco</i></a>.
+      </em>
+    </p>
+    <p>Modern HTML5 elements only.</p>
+    <p>
+      <b>This web-page exists for a few reasons:</b>
+    <ul>
+      <li>Learning HTML on advanced level</li>
+      <li>Learning semantic markdown</li>
+      <li>Previewing default styles for HTML elements</li>
+      <li>Testing custom styles</li>
+    </ul>
+    </p>
+
+    <section>
+      <header>
+        <h2>Text</h2>
+      </header>
+
+      <article>
+        <header>
+          <h3>Headings</h3>
+        </header>
+        <p>Ignoring semantic markdown to display h1 - h6 elements.</p>
+        <div>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        </div>
+
+        <hgroup>
+          <h4>Headings group</h4>
+          <strong><code>&lt;hgroup&gt;</code></strong>
+        </hgroup>
+
+        <p>
+          The <code>&lt;hgroup&gt;</code> element intended to semantically group headings with related elements like
+          subheadings,
+          alternative titles, or taglines, but it has limitations and isn't widely used.
+        </p>
+
+        <br />
+        <div>
+          <h1>CSS Mastery - Unleashing the Power of Style</h1>
+          <p>
+            Are you ready to take your web design skills to the next level? CSS (Cascading Style Sheets)
+            is the key to creating stunning and responsive web pages.
+          </p>
+          <h2>Understanding the Basics of CSS</h2>
+          <p>
+            Before diving into the world of CSS, it's essential to grasp the foundational concepts.
+            Learn about selectors, properties, and values, and discover how they work together to style
+            your web content.
+          </p>
+          <h3>Styling Text with CSS</h3>
+          <p>
+            One of the fundamental aspects of CSS is text styling. Explore how to change fonts, colors,
+            and text formatting to make your content visually appealing.
+          </p>
+          <h4>Layout and Positioning with CSS</h4>
+          <p>
+            CSS provides powerful tools for controlling the layout and positioning of elements on a
+            webpage. Dive into techniques like flexbox and grid to create flexible and responsive
+            designs.
+          </p>
+          <h5>Enhancing User Experience with CSS Transitions</h5>
+          <p>
+            CSS transitions and animations can add a touch of magic to your website. Discover how to
+            create smooth transitions and eye-catching animations to engage your visitors.
+          </p>
+          <h6>Going Beyond with Advanced CSS</h6>
+          <p>
+            Ready for a challenge? Advanced CSS techniques like CSS variables, custom properties, and
+            CSS-in-JS can elevate your web development skills to new heights. Explore these options for
+            fine-tuning and optimizing your styles.
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Paragraphs</h3>
+        </header>
+        <div>
+          <p>
+            <b>Semantic Structure:</b>
+            <br />
+            The <code>&lt;p&gt;</code> element in HTML is crucial for organizing text content on web pages. It
+            represents a single
+            paragraph, aiding browsers and assistive technologies in understanding the structure of the content.
+          </p>
+          <p>
+            <b>Formatting and Styling:</b>
+            <br />
+            Developers utilize CSS to style <code>&lt;p&gt;</code> elements, ensuring consistent text presentation
+            across the
+            website. Properties like font size, color, and alignment can be easily applied to enhance readability.
+          </p>
+          <p>
+            <b>Versatility and Usage:</b>
+            <br />
+            Besides its primary role in text organization, the <code>&lt;p&gt;</code> element can contain other HTML
+            elements,
+            enabling developers to create diverse content layouts efficiently.
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Blockquotes</h3>
+        </header>
+        <div>
+          <blockquote>
+            <p>
+              A block quotation (also known as a long quotation or extract) is a quotation in a written document, that
+              is set off from the main text as a paragraph, or block of text.
+            </p>
+            <p>
+              It is typically distinguished visually using indentation and a different typeface or smaller size
+              quotation. It may or may not include a citation, usually placed at the bottom.
+            </p>
+            <cite><a href="#!">Said no one, ever.</a></cite>
+          </blockquote>
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Lists</h3>
+        </header>
+        <div>
+          <h4>Definition list</h4>
+          <dl>
+            <dt>Definition List Title</dt>
+            <dd>This is a definition list description, definition, or value.</dd>
+          </dl>
+
+          <h4>Ordered List</h4>
+          <ol data-list type="1">
+            <li>List Item 1</li>
+            <li>
+              List Item 2
+              <ol data-list type="A">
+                <li>List Item 1</li>
+                <li>
+                  List Item 2
+                  <ol data-list type="a">
+                    <li>List Item 1</li>
+                    <li>
+                      List Item 2
+                      <ol data-list type="I">
+                        <li>List Item 1</li>
+                        <li>
+                          List Item 2
+                          <ol data-list type="i">
+                            <li>List Item 1</li>
+                            <li>List Item 2</li>
+                            <li>List Item 3</li>
+                          </ol>
+                        </li>
+                        <li>List Item 3</li>
+                      </ol>
+                    </li>
+                    <li>List Item 3</li>
+                  </ol>
+                </li>
+                <li>List Item 3</li>
+              </ol>
+            </li>
+            <li>List Item 3</li>
+          </ol>
+          <br />
+
+          <h4>Unordered List</h4>
+          <ul data-list>
+            <li>List Item 1</li>
+            <li>
+              List Item 2
+              <ul data-list>
+                <li>List Item 1</li>
+                <li>
+                  List Item 2
+                  <ul data-list>
+                    <li>List Item 1</li>
+                    <li>
+                      List Item 2
+                      <ul data-list>
+                        <li>List Item 1</li>
+                        <li>
+                          List Item 2
+                          <ul data-list>
+                            <li>List Item 1</li>
+                            <li>List Item 2</li>
+                            <li>List Item 3</li>
+                          </ul>
+                        </li>
+                        <li>List Item 3</li>
+                      </ul>
+                    </li>
+                    <li>List Item 3</li>
+                  </ul>
+                </li>
+                <li>List Item 3</li>
+              </ul>
+            </li>
+            <li>List Item 3</li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Details / Summary</h3>
+        </header>
+        <details>
+          <summary>Expand for details</summary>
+          <p>
+            The
+            <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> HTML elements work together to create
+            interactive collapsible sections on web pages.
+          </p>
+          <ul>
+            <li>
+              <code>&lt;details&gt;</code> element: This element serves as a container for content that can be toggled
+              open or closed.
+              Initially, the content inside a <code>&lt;details&gt;</code> element is hidden from view. When a user
+              interacts with the
+              element, typically by clicking on it, the content expands or collapses, revealing or hiding its contents.
+            </li>
+            <li>
+              <code>&lt;summary&gt;</code> element: This element acts as a visible heading or summary for the content
+              within the
+              <code>&lt;details&gt;</code> element. It is displayed even when the content is collapsed. Users can click
+              on the
+              <code>&lt;summary&gt;</code>
+              element to toggle the visibility of the content inside the associated <code>&lt;details&gt;</code>
+              element.
+            </li>
+          </ul>
+          <p>
+            Together, these elements provide a way to create collapsible sections of content, allowing users to control
+            which information they want to view, while also providing a concise summary or heading for each section.
+            This can be particularly useful for presenting lengthy or detailed information in a more organized and
+            user-friendly manner.
+          </p>
+        </details>
+      </article>
+
+      <article>
+        <header>
+          <h3>Address</h3>
+        </header>
+        <address>
+          Written by
+          <a href="mailto:webmaster@example.com">Jon Doe</a>.<br />
+          Visit us at:<br />
+          <a href="https://example.com">Example.com</a><br />
+          Box 564, Disneyland<br />
+          USA
+        </address>
+      </article>
+
+      <article>
+        <header>
+          <h3>Horizontal rules</h3>
+        </header>
+        <div>
+          <hr />
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Tabular data</h3>
+        </header>
+        <table>
+          <caption>HTML Table</caption>
+          <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 75%;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td colspan="2">Table Footer: Provides additional information about the table.</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td><code>&lt;caption&gt;</code></td>
+              <td>The <code>&lt;caption&gt;</code> element provides a title or description for the table.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;colgroup&gt;</code></td>
+              <td>
+                The <code>&lt;colgroup&gt;</code> element is a container for defining styles and attributes that apply
+                to one or more columns within a table. It works hand-in-hand with the <code>&lt;col&gt;</code> element
+                to achieve this
+                column-specific styling.
+              </td>
+            </tr>
+            <tr>
+              <td><code>&lt;col&gt;</code></td>
+              <td>
+                The <code>&lt;col&gt;</code> element is used to define properties for columns within a table. It's often
+                used in
+                conjunction with the <code>&lt;colgroup&gt;</code> element to apply styles to multiple columns at once.
+              </td>
+            </tr>
+            <tr>
+              <td><code>&lt;thead&gt;</code></td>
+              <td>The <code>&lt;thead&gt;</code> element contains the header rows of the table.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;tfoot&gt;</code></td>
+              <td>The <code>&lt;tfoot&gt;</code> element contains footer rows of the table, usually for summaries or
+                totals.
+              </td>
+            </tr>
+            <tr>
+              <td><code>&lt;tbody&gt;</code></td>
+              <td>The <code>&lt;tbody&gt;</code> element contains the main content of the table, excluding header and
+                footer
+                rows.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;tr&gt;</code></td>
+              <td>The <code>&lt;tr&gt;</code> element defines a row within the table.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;td&gt;</code></td>
+              <td>The <code>&lt;td&gt;</code> element represents a data cell within a table row.</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <header>
+          <h3>Code</h3>
+        </header>
+        <div>
+          <p>
+            <strong>Keyboard input:</strong>
+            <kbd>Cmd</kbd>
+          </p>
+          <p>
+            <strong>Inline code:</strong>
+            <code>&lt;div&gt;code&lt;/div&gt;</code>
+          </p>
+          <p>
+            <strong>Sample output:</strong>
+            <samp>This is sample output from a computer program.</samp>
+          </p>
+
+          <h3>Pre-formatted text</h3>
+          <pre>P R E F O R M A T T E D T E X T
+  ! " # $ % &amp; ' ( ) * + , - . /
+  0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+  @ A B C D E F G H I J K L M N O
+  P Q R S T U V W X Y Z [ \ ] ^ _
+  ` a b c d e f g h i j k l m n o
+  p q r s t u v w x y z {`{ | }`} ~ </pre>
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Inline elements</h3>
+        </header>
+        <div>
+
+          <dl>
+            <dt>
+              <code>&lt;a&gt;</code>
+            </dt>
+            <dd>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Don't click me!!" target="_blank"
+                rel="noopener noreferrer">This is a text link</a>.
+            </dd>
+
+            <dt>
+              <code>&lt;strong&gt;</code>
+            </dt>
+            <dd>
+              <strong>Strong is used to indicate strong importance.</strong>
+            </dd>
+
+            <dt>
+              <code>&lt;em&gt;</code>
+            </dt>
+            <dd>
+              <em>This text has added emphasis.</em>
+            </dd>
+
+            <dt>
+              <code>&lt;b&gt;</code>
+            </dt>
+            <dd>
+              The <b>b element</b> is stylistically different text from normal text, without any special importance.
+            </dd>
+
+            <dt>
+              <code>&lt;i&gt;</code>
+            </dt>
+            <dd>
+              The <i>i element</i> is text that is offset from the normal text.
+            </dd>
+
+            <dt>
+              <code>&lt;u&gt;</code>
+            </dt>
+            <dd>
+              The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.
+            </dd>
+
+            <dt>
+              <code>&lt;del&gt; and &lt;ins&gt;</code>
+            </dt>
+            <dd>
+              <del>This text is deleted</del> and
+              <ins>This text is inserted</ins>.
+            </dd>
+
+            <dt>
+              <code>&lt;s&gt;</code>
+            </dt>
+            <dd>
+              <s>This text has a strikethrough</s>.
+            </dd>
+
+            <dt>
+              <code>&lt;sup&gt;</code>
+            </dt>
+            <dd>
+              Superscript<sup>®</sup>
+            </dd>
+
+            <dt>
+              <code>&lt;sub&gt;</code>
+            </dt>
+            <dd>
+              Subscript for things like H<sub>2</sub>O.
+            </dd>
+
+            <dt>
+              <code>&lt;small&gt;</code>
+            </dt>
+            <dd>
+              <small>This small text is small for fine print, etc.</small>
+            </dd>
+
+            <dt>
+              <code>&lt;abbr&gt;</code>
+            </dt>
+            <dd>
+              Abbreviation:
+              <abbr title="HyperText Markup Language">HTML</abbr>
+            </dd>
+
+            <dt>
+              <code>&lt;q&gt;</code>
+            </dt>
+            <dd>
+              <q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline
+                quotation.</q>
+            </dd>
+
+            <dt>
+              <code>&lt;cite&gt;</code>
+            </dt>
+            <dd>
+              <cite>This is a citation.</cite>
+            </dd>
+
+            <dt>
+              <code>&lt;dfn&gt;</code>
+            </dt>
+            <dd>
+              The <dfn>dfn element</dfn> indicates a definition.
+            </dd>
+
+            <dt>
+              <code>&lt;mark&gt;</code>
+            </dt>
+            <dd>
+              The <mark>mark element</mark> indicates a highlight.
+            </dd>
+
+            <dt>
+              <code>&lt;var&gt;</code>
+            </dt>
+            <dd>
+              The <var>variable element</var>, such as <var>x</var> =
+              <var>y</var>.
+            </dd>
+
+            <dt>
+              <code>&lt;time&gt;</code>
+            </dt>
+            <dd>
+              The time element:
+              <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
+            </dd>
+          </dl>
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>HTML Comments</h3>
+        </header>
+        <div>
+          <p>
+            There is comment here:
+            <!--This comment should not be displayed-->
+          </p>
+          <p>
+            In raw HTML it looks like this:
+            <code>
+              &lt;!--This comment should not be displayed--&gt;
+            </code>
+          </p>
+          <p>There is a comment spanning multiple tags and lines below here.</p>
+          <!--<p><a href="#!">This is a text link. But it should not be displayed in a comment</a>.</p>
+        <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
+        <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <header>
+        <h2>Embedded content</h2>
+      </header>
+
+      <article>
+        <header>
+          <h3>Images</h3>
+        </header>
+        <div>
+          <h4><code>&lt;img&gt;</code> element</h4>
+          <p>
+            <img src="public/konstantin-dyadyun-OQddDk-3Xgs-unsplash.jpg" alt="Sea with rocky shore" />
+            Photo by <a
+              href="https://unsplash.com/@kostyadyadyun?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Konstantin
+              Dyadyun</a> on <a
+              href="https://unsplash.com/photos/brown-rocky-shore-with-blue-sea-water-during-daytime-OQddDk-3Xgs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+          </p>
+
+          <h4>
+            <code>&lt;figure&gt;</code> element with
+            <code>&lt;img&gt;</code> element
+          </h4>
+          <p>
+          <figure>
+            <img src="public/konstantin-dyadyun-JRFEkkGK3EA-unsplash.jpg"
+              alt="Blossomed tree with sea view from cliff" />
+          </figure>
+          Photo by <a
+            href="https://unsplash.com/@kostyadyadyun?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Konstantin
+            Dyadyun</a> on <a
+            href="https://unsplash.com/photos/green-grass-on-brown-rock-formation-near-body-of-water-during-daytime-JRFEkkGK3EA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+          </p>
+
+          <h4>
+            <code>&lt;figure&gt;</code> element with
+            <code>&lt;img&gt;</code> and
+            <code>&lt;figcaption&gt;</code> elements
+          </h4>
+          <p>
+          <figure>
+            <img src="public/boats-on-river-cb2TUnXJCSU.jpg" alt="Mountain view of bay with boats" />
+            <figcaption>Here is a caption for this image. <br />
+              Photo by <a
+                href="https://unsplash.com/@nikolayv?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nikolay
+                Vorobyev</a> on <a
+                href="https://unsplash.com/photos/boats-on-river-cb2TUnXJCSU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </figcaption>
+          </figure>
+          </p>
+
+          <h4>
+            <code>&lt;figure&gt;</code> element with a
+            <code>&lt;picture&gt;</code> and <code>&lt;source&gt;</code> elements
+          </h4>
+          <figure>
+            <picture>
+              <source srcset="public/a-rocky-beach-with-yellow-flowers-K3y4RrJQyOo-960.jpg"
+                media="(max-width: 480px)" />
+              <img src="public/a-rocky-beach-with-yellow-flowers-K3y4RrJQyOo.jpg"
+                alt="Rocky beach with yellow flowers" />
+            </picture>
+            Photo by <a
+              href="https://unsplash.com/@kostyadyadyun?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Konstantin
+              Dyadyun</a> on <a
+              href="https://unsplash.com/photos/a-rocky-beach-with-yellow-flowers-K3y4RrJQyOo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+          </figure>
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Background images (as <code>&lt;div&gt;</code> element)</h3>
+        </header>
+        <div style="
+                  background-image: url('public/green-grass-field-beside-body-of-water-during-daytime-q3pHknTIUTM.jpg');
+                  width: 480px;
+                  height: 320px;
+                  background-size: cover;
+                "></div>
+        Photo by <a
+          href="https://unsplash.com/@anainsomnia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anastasiia
+          Malai</a> on <a
+          href="https://unsplash.com/photos/green-grass-field-beside-body-of-water-during-daytime-q3pHknTIUTM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </article>
+
+      <article>
+        <header>
+          <h3>Audio</h3>
+        </header>
+        <div><audio controls>audio</audio></div>
+      </article>
+      <article>
+        <header>
+          <h3>Video</h3>
+        </header>
+        <div>
+          <video controls width="480">video
+            <source src="public/video-by-yaroslav-shuraev-on-pexels.mp4">
+          </video>
+          <br />
+          Video by
+          <a href="https://www.pexels.com/ru-ru/@yaroslav-shuraev/">Yaroslav Shuraev</a> on
+          <a href="https://www.pexels.com/ru-ru/video/4510623/">Pexels</a>
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Canvas</h3>
+        </header>
+        <div><canvas id="canvas" style="border: 2px solid black" width="480" height="320">canvas</canvas></div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Meter</h3>
+        </header>
+        <p>
+          Defines a scalar measurement within a known range (a gauge)
+        </p>
+        <div><meter value="75" min="0" max="100">2 out of 10</meter></div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Progress</h3>
+        </header>
+        <p>
+          Represents the progress of a task
+        </p>
+        <div><progress>progress</progress></div>
+      </article>
+      <article>
+
+        <header>
+          <h3>Inline SVG</h3>
+        </header>
+        <div>
+          <svg width="480" height="320" style="border: 2px solid black;">
+            <circle cx="180" cy="160" r="80" fill="cyan" />
+            <circle cx="300" cy="160" r="80" fill="red" />
+          </svg>
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>IFrame</h3>
+        </header>
+        <div>
+          <p>
+            Defines an inline frame
+          </p>
+          <iframe src="/" height="320" width="480" title="iframe"></iframe>
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Embed</h3>
+        </header>
+        <p>
+          Defines a container for an external application
+        </p>
+        <div>
+          <embed src="/" height="320" width="480" title="embed" />
+        </div>
+      </article>
+
+      <article>
+        <header>
+          <h3>Object</h3>
+        </header>
+        <p>
+          Defines a container for an external application
+        </p>
+        <div>
+          <object data="index.html" height="320" width="480" title="object"></object>
+        </div>
+      </article>
+
+    </section>
+    <section>
+      <header>
+        <h2>Form elements</h2>
+      </header>
+      <form>
+        <fieldset>
+          <legend>Input fields</legend>
+          <p>
+            <label for="input__text">Text Input</label>
+            <input id="input__text" type="text" placeholder="Text Input" />
+          </p>
+          <p>
+            <label for="input__password">Password</label>
+            <input id="input__password" type="password" placeholder="Type your Password" />
+          </p>
+          <p>
+            <label for="input__webaddress">Web Address</label>
+            <input id="input__webaddress"" type=" url" placeholder="https://yoursite.com" />
+          </p>
+          <p>
+            <label for="input__emailaddress">Email Address</label>
+            <input id="input__emailaddress" type="email" placeholder="name@email.com" />
+          </p>
+          <p>
+            <label for="input__phone">Phone Number</label>
+            <input id="input__phone" type="tel" placeholder="(999) 999-9999" />
+          </p>
+          <p>
+            <label for="input__search">Search</label>
+            <input id="input__search" type="search" placeholder="Enter Search Term" />
+          </p>
+          <p>
+            <label for="input__text2">Number Input</label>
+            <input id="input__text2" type="number" placeholder="Enter a Number" />
+          </p>
+          <p>
+            <label for="input__file">File Input</label>
+            <input id="input__file" type="file" />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Select menus</legend>
+          <p>
+            <label for="select">Select</label>
+            <select id="select">
+              <optgroup label="Option Group">
+                <option>Option One</option>
+                <option>Option Two</option>
+                <option>Option Three</option>
+              </optgroup>
+            </select>
+          </p>
+          <p>
+            <label for="select_multiple">Select (multiple)</label>
+            <select id="select_multiple" multiple>
+              <optgroup label="Option Group">
+                <option>Option One</option>
+                <option>Option Two</option>
+                <option>Option Three</option>
+              </optgroup>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Checkboxes</legend>
+          <ul data-list>
+            <li>
+              <label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked />
+                Choice A</label>
+            </li>
+            <li>
+              <label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox" />
+                Choice B</label>
+            </li>
+            <li>
+              <label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox" />
+                Choice C</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Radio buttons</legend>
+          <ul data-list>
+            <li>
+              <label for="radio1">
+                <input id="radio1" name="radio" type="radio" checked />
+                Option 1
+              </label>
+            </li>
+            <li>
+              <label for="radio2">
+                <input id="radio2" name="radio" type="radio" />
+                Option 2
+              </label>
+            </li>
+            <li>
+              <label for="radio3">
+                <input id="radio3" name="radio" type="radio" />
+                Option 3
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Textarea</legend>
+          <p>
+            <label for="textarea">Field
+              <textarea id="textarea" rows="8" cols="32" placeholder="Enter your message here"></textarea>
+            </label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>HTML5 inputs</legend>
+          <p>
+            <label for="color-input">Color input</label>
+            <input id="color input" type="color" value="#000000" />
+          </p>
+          <p>
+            <label for="number-input">Number input</label>
+            <input id="number-input" type="number" min="0" max="10" value="5" />
+          </p>
+          <p>
+            <label for="range-input">Range input</label>
+            <input id="range-input" type="range" value="10" />
+          </p>
+          <p>
+            <label for="date-input">Date input</label>
+            <input id="date-input" type="date" value="1970-01-01" />
+          </p>
+          <p>
+            <label for="month-input">Month input</label>
+            <input id="month-input" type="month" value="1970-01" />
+          </p>
+          <p>
+            <label for="week-input">Week input</label>
+            <input id="week-input" type="week" value="1970-W01" />
+          </p>
+          <p>
+            <label for="datetime-input">Datetime input</label>
+            <input id="datetime-input" type="datetime" value="1970-01-01T00:00:00Z" />
+          </p>
+          <p>
+            <label for="datetime-local-input">Datetime-local input</label>
+            <input id="datetime-local-input" type="datetime-local" value="1970-01-01T00:00" />
+          </p>
+          <p>
+            <label for="datalist">Datalist</label>
+            <input id="datalist" type="text" list="example-list" />
+            <datalist>
+              <option value="Example #1"></option>
+              <option value="Example #2"></option>
+              <option value="Example #3"></option>
+            </datalist>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Action buttons</legend>
+          <p>
+            <input type="submit" value="<input type=submit>" />
+            <input type="button" value="<input type=button>" />
+            <input type="reset" value="<input type=reset>" />
+            <input type="submit" value="<input disabled>" disabled />
+          </p>
+          <p>
+            <button type="submit">&lt;button type=submit&gt;</button>
+            <button type="button">&lt;button type=button&gt;</button>
+            <button type="reset">&lt;button type=reset&gt;</button>
+            <button type="button" disabled>&lt;button disabled&gt;</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </div>
+
+  <script src="src/index.js"></script>
+</body>
